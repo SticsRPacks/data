@@ -12,12 +12,12 @@
         <nbplantes>2</nbplantes>
         <codesimul>0</codesimul>
         <plante dominance="1">
-            <fplt>Wheat_Daniel_plt.xml</fplt>
+            <fplt>Wheat_plt.xml</fplt>
             <ftec>IC_Wheat_N0_tec.xml</ftec>
             <flai>defaut.lai</flai>
         </plante>
         <plante dominance="2">
-            <fplt>Pea_Daniel_plt.xml</fplt>
+            <fplt>Pea_plt.xml</fplt>
             <ftec>IC_Pea_N0_tec.xml</ftec>
             <flai>defaut.lai</flai>
         </plante>
@@ -34,12 +34,12 @@
         <nbplantes>1</nbplantes>
         <codesimul>0</codesimul>
         <plante dominance="1">
-            <fplt>Pea_Daniel_plt.xml</fplt>
+            <fplt>Pea_plt.xml</fplt>
             <ftec>SC_Pea_N0_tec.xml</ftec>
             <flai>defaut.lai</flai>
         </plante>
         <plante dominance="2">
-            <fplt>Pea_Daniel_plt.xml</fplt>
+            <fplt>Pea_plt.xml</fplt>
             <ftec>IC_Pea_N0_tec.xml</ftec>
             <flai>defaut.lai</flai>
         </plante>
@@ -56,12 +56,12 @@
         <nbplantes>1</nbplantes>
         <codesimul>0</codesimul>
         <plante dominance="1">
-            <fplt>Wheat_Daniel_plt.xml</fplt>
+            <fplt>Wheat_plt.xml</fplt>
             <ftec>SC_Wheat_N0_tec.xml</ftec>
             <flai>defaut.lai</flai>
         </plante>
         <plante dominance="2">
-            <fplt>Pea_Daniel_plt.xml</fplt>
+            <fplt>Pea_plt.xml</fplt>
             <ftec>IC_Pea_N0_tec.xml</ftec>
             <flai>defaut.lai</flai>
         </plante>
