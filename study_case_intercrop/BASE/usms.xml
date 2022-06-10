@@ -14,12 +14,12 @@
         <plante dominance="1">
             <fplt>Wheat_plt.xml</fplt>
             <ftec>IC_Wheat_N0_tec.xml</ftec>
-            <flai>defaut.lai</flai>
+            <flai>null</flai>
         </plante>
         <plante dominance="2">
             <fplt>Pea_plt.xml</fplt>
             <ftec>IC_Pea_N0_tec.xml</ftec>
-            <flai>defaut.lai</flai>
+            <flai>null</flai>
         </plante>
     </usm>
     <usm nom="SC_Pea_2005-2006_N0">
@@ -36,12 +36,12 @@
         <plante dominance="1">
             <fplt>Pea_plt.xml</fplt>
             <ftec>SC_Pea_N0_tec.xml</ftec>
-            <flai>defaut.lai</flai>
+            <flai>null</flai>
         </plante>
         <plante dominance="2">
-            <fplt>Pea_plt.xml</fplt>
-            <ftec>IC_Pea_N0_tec.xml</ftec>
-            <flai>defaut.lai</flai>
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
         </plante>
     </usm>
     <usm nom="SC_Wheat_2005-2006_N0">
@@ -58,12 +58,12 @@
         <plante dominance="1">
             <fplt>Wheat_plt.xml</fplt>
             <ftec>SC_Wheat_N0_tec.xml</ftec>
-            <flai>defaut.lai</flai>
+            <flai>null</flai>
         </plante>
         <plante dominance="2">
-            <fplt>Pea_plt.xml</fplt>
-            <ftec>IC_Pea_N0_tec.xml</ftec>
-            <flai>defaut.lai</flai>
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
         </plante>
     </usm>
 </usms>
