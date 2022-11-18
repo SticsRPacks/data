@@ -226,14 +226,14 @@ SeuilLAIapex
 1.0
 tigefeuilcoupe
 5.0
+irazomax
+0.566
 codeindetermin
 1
 cgrain
 0.097
 cgrainv0
 1524.000
-irazomax
-0.566
 codeir
 1
 irmax
@@ -505,7 +505,7 @@ stdrpdes
 jvc
 0
 stdordebour
-100
+-999
 sensiphot
 0
 phobase
@@ -611,7 +611,7 @@ stdrpdes
 jvc
 0
 stdordebour
-100
+-999
 sensiphot
 0
 phobase
@@ -717,7 +717,7 @@ stdrpdes
 jvc
 0
 stdordebour
-100
+-999
 sensiphot
 0
 phobase
@@ -823,7 +823,7 @@ stdrpdes
 jvc
 0
 stdordebour
-100
+-999
 sensiphot
 0
 phobase
@@ -929,7 +929,7 @@ stdrpdes
 jvc
 0
 stdordebour
-100
+-999
 sensiphot
 0
 phobase
