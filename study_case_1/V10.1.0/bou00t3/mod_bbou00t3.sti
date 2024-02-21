@@ -1,0 +1,207 @@
+ Balance of the STICS simulation v_test-V10_r3139_2022-04-21         , model culture
+ **************************************************************
+ 1. INPUT DATA
+ *******************
+   Weather file           :                                          bouillaj
+   Cropping practices file:                                   bou00t3_tec.xml
+   Plant file             :                                  maisopti_plt.xml
+   Cultivar: 1.Cecilia       variety group = 1
+   Initialisations file   :                                   bou00t3_ini.xml
+   Initial soil values    : BOUT300     
+      Z (cm)      Water (%)   NO3 (kg/ha)    NH4 (kg/ha)
+        20.        19.9          13.2           0.0
+        20.        19.9           6.7           0.0
+        20.        20.0           6.7           0.0
+        20.        18.0           6.7           0.0
+        80.        16.0          26.7           0.0
+
+   Start of simulation   :  1-jan-2000      day   1
+   End of simulation     :  1-nov-2000      day 306   (or 306)
+   Irrigation read 
+   Fertilisation read
+   Method of PET calculation:               Penman reading
+
+   Irrigation
+       28-jun-2000                   15.
+       17-jul-2000                   27.
+        2-aug-2000                   27.
+       12-aug-2000                   27.
+       22-aug-2000                   27.
+    Irrigation:           Number of irrigations = 5
+     Total quantity applied =   123. mm
+
+   Fertilisation:        Number of applications = 1
+          date      amount (kg N/ha)  fertilizer type
+       16-jun-2000        150.               1
+
+   Organic residues and/or soil tillage
+         No application, no tillage
+
+ 2. CROP DEVELOPMENT
+ *******************
+     development driven by thermal units
+     temperature used : crop temperature
+
+        stage            BBCH       date         units  cumulative units  lai
+   ------------                -----------  -----  ----------------  ---
+     sowing              00     9-may-2000        0.        0.
+   Vegetative stages
+     ger calculated      05    15-may-2000       36.       36.       0.0
+     lev observed        09    19-may-2000        0.       36.       0.0
+     amf calculated      35    19-jun-2000      435.      470.       1.1
+     lax calculated      55     2-aug-2000      648.     1118.       7.1
+     sen calculated      85     2-sep-2000      502.     1620.       7.1
+     lan calculated             5-oct-2000      425.     2045.       0.0
+   Reproductive stages
+     flo calculated      65     6-aug-2000     1169.     1169.
+     drp calculated      71    21-aug-2000      266.     1436.       7.1
+     mat calculated      89    21-oct-2000      722.     2158.       0.0
+     debdes calculated   75    26-oct-2000       51.     2208.       0.0
+     crop harvest        99    31-oct-2000       95.     2253.       0.0
+
+   Length of cycle =175 days
+   Harvest operation: whole plant harvested
+   Harvest objective: according to water content
+
+ 3. GROWTH AND COMPONENTS OF YIELD
+ **********************************
+     31-oct-2000
+   Aerial biomass at harvest (0% water)=   22.97 t/ha
+   Grain or fruit Yield   (0% water)   =   13.12 t/ha
+   Grain or fruit Yield (36.% water)   =   20.50 t/ha
+
+   Senescent aerial biomass (0% water) =    0.99 t/ha
+
+   Number of grains or fruits          =   4500. /m2
+   Plant density                       =     8.0 /m2
+   Grain or fruit weight (36.% water)  =     0.456 g
+   Growth rate (lag phase)             =    30.2 mg/m2/j
+   Number of emerged leaves            =    15
+   Number of hot or cold days          =     1
+
+   Quantity of N in the crop           =   254. kg/ha
+   Quantity of N in grains or fruits   =   144. kg/ha
+   Quantity of N in roots              =     6. kg/ha
+
+   N content of whole plant            =  1.11 % DM
+   N concentration of grains or fruits =  1.10 % DM
+   Protein content of grains or fruits =   6.2 % DM
+
+   Nitrogen fertiliser efficiency      = 0.69
+   Harvest index                       = 0.57
+
+  Composition of grains or fruits
+   Dry matter content                  =   64. % FW
+   Nitrogen content                    =  0.70 % FW
+
+ 4. WATER and NITROGEN BALANCE over the crop life
+ ************************************************
+     Cumulative ETMax (eos+eop)     =  607. mm
+     Cumulative AET                 =  505. mm
+     Cumulative Evaporation         =  151. mm
+     Cumulative Transpiration       =  354. mm
+     Cumulative Rainfall+irrigation =  463. mm
+
+     Water reserve used by plant    =  179. mm
+     Maximum rooting depth          =  123. cm
+
+   Mean STRESS indices :              swfac    turfac    inns   tcult-tair  exofac    etr/etm   etm/etr
+   vegetative phase    (lev-drp)      0.90      0.75      0.98      0.61      0.00      0.91      1.13
+   reproductive phase  (drp-mat)      0.65      0.52      1.00      0.01      0.00      0.75      1.50
+
+ 5. WATER, NITROGEN, CARBON BALANCE over the whole simulation period  (306 days)
+ *******************************************************************************
+   Normalised days at 15.degree C:    Humus = 298.      Residues =   0.
+   Potential mineralisation rate = 0.43 kg N/ha/day   or 4.87% per year
+WATER BALANCE  (mm)
+     initial water content    413.        final water content      359.
+     rain                     562.        evaporation              293.
+     irrigation               123.        transpiration            354.
+     capillary rise            -0.        runoff                     0.
+                                          deep infiltration         79.
+                                          mole drainage              0.
+                                          leaf interception          0.
+                                          mulch interception         0.
+                                          ineffective irrigation    12.
+     -----------------------------        -----------------------------
+     TOTAL INITIAL           1098.        TOTAL FINAL             1098.
+
+PLANT NITROGEN BALANCE (kg N/ha)
+     ------ Initial pools ------         ------- Final pools -------
+     Aerial plant N            0.                                   0.
+     Root N                    0.                                   0.
+     Perennial reserves N      0.                                   0.
+     Total plant N             0.                                   0.
+     ------- Input fluxes ------         ------ Output fluxes ------
+     N uptake                254.        N exported               144.
+     N fixation                0.        N returned to soil       116.
+     ----------------------------        ----------------------------
+     TOTAL INITIAL           254.        TOTAL FINAL              260.
+
+
+SOIL MINERAL NITROGEN BALANCE (kg N/ha)
+     ------ Initial pools ------         ------- Final pools -------
+     NH4-N                     0.                                   0.
+     NO3-N                    60.                                  39.
+     Total mineral N          60.                                  39.
+     ------- Input fluxes ------         ------ Output fluxes ------
+                                         plant N uptake           254.
+     rain                     11.        leaching                  10.
+     irrigation                1.        leaching in mole drains    0.
+     fertiliser              150.        fertiliser immobilisat.   28.
+                                         fertiliser volatilisat.    7.
+     humus mineralisation    128.        manure N volatilisat.      0.
+     residue mineralisation   -0.        (N2+N2O)-N losses         12.
+     ----------------------------        ----------------------------
+     TOTAL INITIAL           350.        TOTAL FINAL              350.
+
+SOIL ORGANIC NITROGEN BALANCE (kg N/ha)
+     ------ Initial pools ------         ------- Final pools -------
+     Active humified          1164.                              1064.
+     Inert humified           2162.                              2162.
+     Zymogeneous biomass         0.                                 1.
+     Organic residues            0.                                 5.
+     Deep root residues          0.                                 0.
+     Mulch residues              0.                               110.
+     Total organic pools      3326.                              3342.
+     ------- Input fluxes ------         ------ Output fluxes ------
+     fertiliser immobilis.      28.
+     organic fertiliser          0.
+     crop residues             110.
+     fallen leaves               0.      Priming (PE)               0.
+     trimmed leaves              0.      Mineralisation - PE      128.
+     dead roots                  6.
+     dead perennial organs       0.
+     ----------------------------        ----------------------------
+     TOTAL INITIAL            3470.      TOTAL FINAL             3470.
+
+SOIL ORGANIC CARBON BALANCE   (kg C/ha)
+     ------ Initial pools ------         ------- Final pools -------
+     Active humified         11086.                              9884.
+     Inert humified          20588.                             20588.
+     Zymogeneous biomass         0.                                21.
+     Organic residues            0.                               193.
+     Deep root residues          0.                                 0.
+     Mulch residues              0.                              4128.
+     Total organic pools     31673.                             34812.
+     ------- Input fluxes ------         ------ Output fluxes ------
+     fertiliser immobilis.       0.
+     organic fertiliser          0.
+     crop residues            4138.
+     fallen leaves               0.      Priming (PE)               0.
+     trimmed leaves              0.      Mineralisation - PE     1215.
+     dead roots                216.
+     dead perennial organs       0.
+     ----------------------------        ----------------------------
+     TOTAL INITIAL           36027.      TOTAL FINAL            36027.
+
+Heterotrophic Respiration (kg C/ha): Residues =   13.
+                                     Humus    = 1202.
+                                     Total    = 1215.
+
+Cumulative N2O emissions  (kg N/ha): nitrification      =  0.00
+                                     denitrification    =  0.00
+                                     Total              =  0.00
+
+Aboveground CROP RESIDUES returned to soil:            DM =  9.9 t/ha   C content = 4138. kg/ha   N content =  110. kg/ha   C/N = 37.5
+Total CROP RESIDUES returned to soil:straw+roots       DM = 10.4 t/ha   C content = 4354. kg/ha   N content =  116. kg/ha   C/N = 37.4

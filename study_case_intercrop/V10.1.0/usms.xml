@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<usms version="10.1.0">
+    <usm nom="IC_Wheat_Pea_2005-2006_N0">
+        <datedebut>269</datedebut>
+        <datefin>578</datefin>
+        <finit>IC_2005-2006_N0_ini.xml</finit>
+        <nomsol>AuzAS6-N0</nomsol>
+        <fstation>auzevilj_sta.xml</fstation>
+        <fclim1>auzevilj.2005</fclim1>
+        <fclim2>auzevilj.2006</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>2</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>Wheat_plt.xml</fplt>
+            <ftec>IC_Wheat_N0_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>IC_Wheat_Pea_2005-2006_N0p.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>Pea_plt.xml</fplt>
+            <ftec>IC_Pea_N0_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>IC_Wheat_Pea_2005-2006_N0a.obs</fobs>
+        </plante>
+    </usm>
+    <usm nom="SC_Pea_2005-2006_N0">
+        <datedebut>269</datedebut>
+        <datefin>578</datefin>
+        <finit>SC_2005-2006_N0_ini.xml</finit>
+        <nomsol>AuzAS6-N0</nomsol>
+        <fstation>auzevilj_sta.xml</fstation>
+        <fclim1>auzevilj.2005</fclim1>
+        <fclim2>auzevilj.2006</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>Pea_plt.xml</fplt>
+            <ftec>SC_Pea_N0_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>SC_Pea_2005-2006_N0.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+    <usm nom="SC_Wheat_2005-2006_N0">
+        <datedebut>269</datedebut>
+        <datefin>578</datefin>
+        <finit>SC_2005-2006_N0_ini.xml</finit>
+        <nomsol>AuzAS6-N0</nomsol>
+        <fstation>auzevilj_sta.xml</fstation>
+        <fclim1>auzevilj.2005</fclim1>
+        <fclim2>auzevilj.2006</fclim2>
+        <culturean>0</culturean>
+        <nbplantes>1</nbplantes>
+        <codesimul>0</codesimul>
+        <plante dominance="1">
+            <fplt>Wheat_plt.xml</fplt>
+            <ftec>SC_Wheat_N0_tec.xml</ftec>
+            <flai>null</flai>
+            <fobs>SC_Wheat_2005-2006_N0.obs</fobs>
+        </plante>
+        <plante dominance="2">
+            <fplt>null</fplt>
+            <ftec>null</ftec>
+            <flai>null</flai>
+            <fobs>null</fobs>
+        </plante>
+    </usm>
+</usms>
