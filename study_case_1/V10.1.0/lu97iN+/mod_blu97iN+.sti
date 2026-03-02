@@ -1,4 +1,4 @@
- Balance of the STICS simulation v_test-V10_r3139_2022-04-21         , model culture
+ Balance of the STICS simulation 10.1.1_2024-03-07                   , model culture
  **************************************************************
  1. INPUT DATA
  *******************
@@ -9,10 +9,10 @@
    Initialisations file   :                                   lu97iN+_ini.xml
    Initial soil values    : LUSIGNAN    
       Z (cm)      Water (%)   NO3 (kg/ha)    NH4 (kg/ha)
-        25.        19.7          13.3           0.0
-        30.        22.6           8.8           0.0
-        35.        23.7           9.2           0.0
-        30.        26.8           6.2           0.0
+        25.        19.7          16.7           0.0
+        30.        22.6          10.0           0.0
+        35.        23.7          11.7           0.0
+        30.        26.8          10.0           0.0
 
    Start of simulation   :  1-jan-1997      day   1
    End of simulation     : 10-oct-1997      day 283   (or 283)
@@ -31,6 +31,7 @@
 
    Fertilisation:        Number of applications = 1
           date      amount (kg N/ha)  fertilizer type
+       -----------  ----------------  ---------------
        14-apr-1997        100.               2
 
    Organic residues and/or soil tillage

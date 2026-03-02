@@ -1,4 +1,4 @@
- Balance of the STICS simulation v_test-V10_r3139_2022-04-21         , model culture
+ Balance of the STICS simulation 10.1.1_2024-03-07                   , model culture
  **************************************************************
  1. INPUT DATA
  *******************
@@ -9,7 +9,7 @@
    Initialisations file   :                                   bou00t3_ini.xml
    Initial soil values    : BOUT300     
       Z (cm)      Water (%)   NO3 (kg/ha)    NH4 (kg/ha)
-        20.        19.9          13.2           0.0
+        20.        20.1          13.3           0.0
         20.        19.9           6.7           0.0
         20.        20.0           6.7           0.0
         20.        18.0           6.7           0.0
@@ -32,6 +32,7 @@
 
    Fertilisation:        Number of applications = 1
           date      amount (kg N/ha)  fertilizer type
+       -----------  ----------------  ---------------
        16-jun-2000        150.               1
 
    Organic residues and/or soil tillage

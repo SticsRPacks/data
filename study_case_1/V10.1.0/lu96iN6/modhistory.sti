@@ -1,6 +1,6 @@
  -----------------------------------------------------------------------------------------
- Stics history file            Creation date: 2022/06/09-11:13:38
- STICS Version: v_test-V10_r3139_2022-04-21                       
+ Stics history file Creation date: 2026/03/02-11:03:35
+ STICS Version: 10.1.1_2024-03-07                                 
  -----------------------------------------------------------------------------------------
  
  
@@ -115,7 +115,7 @@
  rapNmindec   1.00000005E-03
  fNmindecmin   0.100000001    
    
- TECHNICAL PARAMETERS NEEDED FOR THE SIMULATION, file: lu96iN6_tec.xml
+ TECHNICAL PARAMETERS NEEDED FOR THE SIMULATION, file: fictec1.txt
  *********************************************************
  P_nbjtrav            0
  P_nbjres            0
@@ -153,12 +153,12 @@
  P_codlocirrig            1
  P_profmes   120.000000    
  P_concirr   0.109999999    
+ napN            1
+  P_julapN,P_doseN,P_engrais          113   60.0000000               1                                                                                                                                                                                                                                                                                                                                                                                                                                               
  P_engamm  0.500000000    
  P_orgeng   46.0000000    
  P_deneng  0.150000006    
  P_voleng  0.150000006    
- napN            1
-  P_julapN,P_doseN,P_engrais          113   60.0000000               1                                                                                                                                                                                                                                                                                                                                                                                                                                               
  P_codlocferti            1
  P_irecbutoir          999
  P_ressuite straw+roots
@@ -372,13 +372,10 @@
  P_zrac0 :    0.00000000    
  P_stade0 : snu
  INN0 :    0.00000000       0.00000000       0.00000000    
-
--------------------------------------------------------------------------------
-
 Initial values over the soil depth (120 cm):     SWC = 279. mm     SMN = 37.6 kg N/ha
  ATTENTION: neither rain nor irrigation at sowing
  rec observed before mat
  Program end ... 
  -----------------------------------------------------------------------------------------
- Stics history file end            End date: 2022/06/09-11:13:38
+ Stics history file end End date: 2026/03/02-11:03:36
  -----------------------------------------------------------------------------------------
