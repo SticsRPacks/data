@@ -1,0 +1,132 @@
+---
+title: "SticsRPacks/data: run USM 'bou00t1'"
+author: "T. Flutre"
+date: "`r format(Sys.time(), '%d/%m/%Y %H:%M:%S')`"
+lang: "en"
+colorlinks: true
+output:
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float: true
+    number_sections: TRUE
+    code_folding: show
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: TRUE
+urlcolor: blue
+---
+
+<!--
+This R chunk is used to set up some options.
+-->
+```{r setup, echo=FALSE}
+suppressPackageStartupMessages(library(knitr))
+opts_chunk$set(echo=TRUE, warning=TRUE, message=TRUE, cache=FALSE,
+               fig.align="center")
+opts_knit$set(progress=TRUE, verbose=TRUE)
+```
+
+
+
+# Preamble
+
+Paths:
+```{r}
+projectName <- "data"
+projectDir <- ""
+javastics <- ""
+if(Sys.info()["user"] == "tflutre"){
+  projectDir <- file.path("~/Documents/travail/src_ext/STICS/github_project",
+                          projectName)
+  javastics <- "~/Documents/travail/src_ext/STICS/JavaSTICS-10.5.0-STICS-10.5.0"
+} else if(Sys.info()["user"] == "<collaborator1>"){
+  projectDir <- file.path("C:/Documents/...",
+                          projectName)
+}
+projectDir <- path.expand(projectDir)
+stopifnot(dir.exists(projectDir))
+```
+
+Dependencies:
+```{r}
+suppressPackageStartupMessages(library(SticsRPacks))
+```
+
+Execution time (see the appendix):
+```{r time_0}
+t0 <- proc.time()
+```
+
+
+
+# Simulate the USM
+
+## Prepare the inputs
+
+```{r}
+prev_version <- "V10.1.0"
+new_version <- "V10.5.0"
+
+workspace <- file.path(projectDir, "study_case_1", new_version)
+if(dir.exists(workspace))
+  unlink(workspace, recursive=TRUE)
+dir.create(workspace, recursive = TRUE)
+
+workspace_xml <- file.path(workspace, "XmlFiles")
+usm <- "bou00t1"
+extract_workspace(from_workspace = file.path(projectDir, "study_case_1", prev_version, "XmlFiles"),
+                  to_workspace = workspace_xml,
+                  javastics,
+                  usm = usm)
+
+gen_usms_xml2txt(javastics, workspace_xml, workspace, usm)
+
+devPars <- c("iplt", "iger", "ilev", "iamf", "ilax",
+             "iflo","idrp","ilan","imat","irec")
+devVars <- paste0(devPars, "s")
+gen_varmod(workspace, var=devVars,
+           file_name = file.path(usm, "var.mod"),
+           append = TRUE)
+```
+
+## Run STICS
+
+```{r}
+wrapper_options <- stics_wrapper_options(javastics, workspace=workspace, parallel=FALSE)
+wrap <- stics_wrapper(wrapper_options)
+```
+
+## Compare both versions
+
+```{r}
+new_sim <- get_sim(workspace, usm)
+colnames(new_sim[[usm]])
+
+inF <- file.path(projectDir, "study_case_1", prev_version, usm, paste0("mod_s", usm, ".sti"))
+prev_sim <- get_sim(file.path(projectDir, "study_case_1", prev_version, usm))
+
+stopifnot(nrow(new_sim[[usm]]) == nrow(prev_sim[[usm]]),
+          ncol(new_sim[[usm]]) > ncol(prev_sim[[usm]]))
+
+var_name <- "masec_n"
+summary(new_sim[[usm]][[var_name]])
+summary(prev_sim[[usm]][[var_name]])
+
+corP <- cor(new_sim[[usm]][[var_name]], prev_sim[[usm]][[var_name]])
+plot(new_sim[[usm]][[var_name]], prev_sim[[usm]][[var_name]],
+     xlab = new_version, ylab = prev_version, las = 1,
+     main = paste0(var_name, ": corP=", round(corP, 4)))
+abline(a=0, b=1)
+```
+
+
+
+
+# Appendix
+
+```{r info}
+t1 <- proc.time(); t1 - t0
+print(sessionInfo(), locale=FALSE)
+```
