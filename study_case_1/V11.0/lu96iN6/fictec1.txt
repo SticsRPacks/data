@@ -22,6 +22,10 @@ interrang
 2.00000
 orientrang
 0.00000
+code_strip
+2
+nrow
+1
 codedecisemis
 2
 nbjmaxapressemis
