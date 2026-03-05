@@ -176,8 +176,6 @@ dfolbas
 5.00000
 dfolhaut
 5.00000
-nrow
-1
 temax
 34.00000
 teoptbis

@@ -177,7 +177,6 @@
         <param format="real" max="10.0" min="-10.0" nom="adfol">1.00000</param>
         <param format="real" max="10.0" min="1.0" nom="dfolbas">5.00000</param>
         <param format="real" max="10.0" min="1.0" nom="dfolhaut">5.00000</param>
-        <param format="real" max="10.0" min="1.0" nom="nrow">1</param>
       </choix>
     </option>
   </formalisme>
